@@ -2,32 +2,61 @@ package com.hello2chandan.studentms.model;
 
 import java.util.List;
 
-public class Student {
-    private Integer id;
-    private String name;
-    List<Payment> payment;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Transient;
 
+@Entity
+@Table(name = "ms_student")
+public class Student {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private Integer orgId;
+    private String firstName;
+    private String lastName;
+    private String gender;
+    @Transient
+    private List<Payment> payments;
+
+    public void setPayments(List<Payment> payments) {
+        this.payments = payments;
+    }
+    public List<Payment> getPayments() {
+        return payments;
+    }
     public void setId(Integer id) {
         this.id = id;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setOrgId(Integer orgId) {
+        this.orgId = orgId;
     }
-
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
     public Integer getId() {
         return id;
     }
-
-    public String getName() {
-        return name;
+    public Integer getOrgId() {
+        return orgId;
     }
-
-    public List<Payment> getPayment() {
-        return payment;
+    public String getFirstName() {
+        return firstName;
     }
-
-    public void setPayment(List<Payment> payment) {
-        this.payment = payment;
+    public String getLastName() {
+        return lastName;
+    }
+    public String getGender() {
+        return gender;
     }
 }
