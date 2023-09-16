@@ -8,7 +8,8 @@
 - Maven 3.9.2
 
 - ## Arhitecture
-![Student_Management](https://github.com/mail2mrcm/tech4all/assets/118661926/d4cdafb3-2174-45e4-9803-4a58fdff0780)
+![Student-Management](https://github.com/mail2mrcm/tech4all/assets/118661926/4104fa46-8183-4b7c-83a5-f8afc0f764ca)
+
 
 - ## Project Structure & Components  :
 ![image](https://github.com/mail2mrcm/tech4all/assets/118661926/a567b87c-0729-44aa-bf43-283a66fecb62)
