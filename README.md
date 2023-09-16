@@ -33,7 +33,20 @@
 - ## Test :
  Only 3 APIs are available currently and can be added further <br/> 
  `Add student` - [POST] http://localhost:9093/api/1.0/student <br/>
- `Add fees to be paid for the student` - [POST] http://localhost:9093/api/1.0/student <br/>
- `Get student with payments` - [GET] http://localhost:9093/api/1.0/student/1/with-payments <br/>
- `Make payment by student` - [PUT] http://localhost:9093/api/1.0/student/1 <br/>
+ ```diff
+ curl -X POST -H "Content-Type: application/json" -d '{"orgId": 1, "firstName": "chandan", "lastName": "maity", "gender": "male"}' http://localhost:9093/api/1.0/student/
+ ```
+ `Add fees to be paid for the student` - [POST] http://localhost:9093/api/1.0/payment <br/>
+  ```diff
+ curl -X POST -H "Content-Type: application/json" -d '{"studentId": 1, "description": "Semister Fees", "amount": 5000.0, "status": "pending"}' http://localhost:9093/api/1.0/payment/
+ ```
+ `Get student with payments` - [GET] http://localhost:9093/api/1.0/student/{id}/with-payments <br/>
+ ```diff
+ curl -X GET -H "Content-Type: application/json" http://localhost:9093/api/1.0/student/{id}/with-payments
+ ``` 
+ `Make payment by student` - [PUT] http://localhost:9093/api/1.0/payment/{id} <br/>
+  ```diff
+ curl -X PUT -H "Content-Type: application/json" -d '{"studentId": 1, "description": "Semister Fees", "amount": 5000.0, "status": "paid"}' http://localhost:9093/api/1.0/payment/1/
+ ``` 
+ 
      
