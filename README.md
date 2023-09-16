@@ -1,5 +1,4 @@
-- # springboot-microservices-basic
-  
+- # springboot-microservices-basic  
   _This is a spring boot based microsevice style application for student managment system. It used various sping components like spring config server, netflix eurek server as discovery service, spring api gateway, openfeign for inter communication etc._
     
 - ## Technology stack
@@ -22,5 +21,18 @@
   configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
   - `Stident Miroservice `- add/get/update student and also perform internal communication with Payment microservice to fetch payment details of student.
   - `Payment Microservice` - add/make payment function.
-
-
+    
+- ## Buiild & Deployment  :
+  1. Build Config server and Deploy config-server1.0.0.jar. Default port 9090 is used.
+  2. Build Service discovery application and deploy the same. Default port 9091 is used.
+  3. Build Student microservice and deploy it in port 9092.
+  4. Build Payment microservice and deploy it in port 9094.
+  5. finally build API Gateawy and deploy it in port 9093.
+     
+- ## Test :
+ Only 3 APIs are available currently and can be added further <br/> 
+ `Add student` - [POST] http://localhost:9093/api/1.0/student <br/>
+ `Add fees to be paid for the student` - [POST] http://localhost:9093/api/1.0/student <br/>
+ `Get student with payments` - [GET] http://localhost:9093/api/1.0/student/1/with-payments <br/>
+ `Make payment by student` - [PUT] http://localhost:9093/api/1.0/student/1 <br/>
+     
