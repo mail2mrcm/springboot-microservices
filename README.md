@@ -21,7 +21,7 @@
   - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
      configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
     
-  - `Stident Miroservice `- add/get/update student and also perform internal communication with Payment microservice to fetch payment details of student. This application is also 
+  - `Student Miroservice `- add/get/update student and also perform internal communication with Payment microservice to fetch payment details of student. This application is also 
      regstered in service discovery as per the configuration available in ***student-service.yml***.
     
   - `Payment Microservice` - add/make payment function. This application is regstered in service discovery as per the configuration available in ***payment-service.yml***.
