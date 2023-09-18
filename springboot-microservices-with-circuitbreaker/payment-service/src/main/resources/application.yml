@@ -1,0 +1,7 @@
+servere:
+ port: 0
+spring:
+ config:
+  import: "optional:configserver:http://localhost:9090"
+ application:
+  name: payment-service
