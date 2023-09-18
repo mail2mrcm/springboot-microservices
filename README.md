@@ -7,7 +7,7 @@
   - Spring Cloud 2022.0.4
   - Maven 3.9.2
 
-- ## Arhitecture
+- ## Architecture
   ![Student-Management](https://github.com/mail2mrcm/tech4all/assets/118661926/4104fa46-8183-4b7c-83a5-f8afc0f764ca)
 
 - ## Project Structure & Components  :
