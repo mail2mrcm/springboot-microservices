@@ -25,7 +25,7 @@ Please follow the same steps mentioned in **README.md**
 **curl -X POST -H "Content-Type: application/json" -d '{"orgId": 1, "firstName": "chandan", "lastName": "maity", "gender": "Male"}'  http://localhost:9093/api/1.0/student/**
 - Create Payment for the student using curl command:  [Step 2]  
 **curl -X POST -H "Content-Type: application/json" -d '{"studentId": 1, "description": "Semister Fees", "amount": 5000.0, "status": "Pending"}' http://localhost:9093/api/1.0/payment/**
-- Get Student details along with Payment:  [Step 3]
+- Get Student details along with Payment:  [Step 3]  
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/9a306026-f281-4239-ac5e-645c28575422)
 - Get Status of circuit Breaker information:  [Step 4]
 > **Note**  
