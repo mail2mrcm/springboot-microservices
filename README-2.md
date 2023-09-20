@@ -19,4 +19,13 @@ This is a microservice pattern and principles for creating fault isolation betee
 Please follow the same steps mentioned in **README.md**
 > **Note**  
 > This time Student service and Payment Service are deployed in dynamic port as there can be multiple instances of both services to manage load. `server.port = 0`
-# Build & Deploy
+# Test
+- Add Student using curl command:  [Step 1]  
+**curl -X POST -H "Content-Type: application/json" -d '{"orgId": 1, "firstName": "chandan", "lastName": "maity", "gender": "Male"}'  http://localhost:9093/api/1.0/student/**
+- Create Payment for the student using curl command:  [Step 2]  
+**curl -X POST -H "Content-Type: application/json" -d '{"studentId": 1, "description": "Semister Fees", "amount": 5000.0, "status": "Pending"}' http://localhost:9093/api/1.0/payment/**
+- Get Student details along with Payment:  [Step 3]
+![Student-Get](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/87db2407-5863-41c8-8fe7-78e8dc3ee259)
+- Get Status of circuit Breaker information:  [Step 4]
+![Circuit Breaker-Close](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5dffc5e3-44cb-43cb-be3b-70f4e74cd497)
+
