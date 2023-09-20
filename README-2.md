@@ -10,3 +10,5 @@ This is a microservice pattern and principles for creating fault isolation betee
 - `wait-duration-in-open-state`: If triggered, wait at least “wait-duration-in-open-state” seconds before allowing more calls.
 - `permitted-number-of-calls-in-half-open-state`: After “wait-duration-in-open-state” time has passed, allow another “permitted-number-of-calls-in-half-open-state” requests and wait for them to calculate the failure rate again.
 - `sliding-window-size`: Record the result of the last “sliding-window-size” seconds.
+# Architecture
+![Student-Management-Day2](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5008ee49-8046-4594-be9e-7d0861327e84)
