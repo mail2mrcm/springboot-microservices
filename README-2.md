@@ -29,10 +29,9 @@ Please follow the same steps mentioned in **README.md**
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/9a306026-f281-4239-ac5e-645c28575422)
 - Get Status of circuit Breaker information:  [Step 4]
 > **Note**  
-> Circuite Breaker is in CLOSE State
-
+> Circuite Breaker is in CLOSE State  
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/6a3e136d-d0f0-4f59-b51d-a278a2efce35)
-- Stop Payment service:  [Step 5]
+- Stop Payment service:  [Step 5]  
 - Get Student details along with Payment: [step 6]
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/48a5b2cf-9320-4e4d-adf3-c286f5d67bfb)
 > **Note**  
