@@ -12,3 +12,5 @@ This is a microservice pattern and principles for creating fault isolation betee
 - `sliding-window-size`: Record the result of the last “sliding-window-size” seconds.
 # Architecture
 ![Student-Management-Day2](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5008ee49-8046-4594-be9e-7d0861327e84)
+# Build & Deploy
+Please follow the same steps mentioned in **README.md**
