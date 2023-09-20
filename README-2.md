@@ -25,7 +25,14 @@ Please follow the same steps mentioned in **README.md**
 - Create Payment for the student using curl command:  [Step 2]  
 **curl -X POST -H "Content-Type: application/json" -d '{"studentId": 1, "description": "Semister Fees", "amount": 5000.0, "status": "Pending"}' http://localhost:9093/api/1.0/payment/**
 - Get Student details along with Payment:  [Step 3]
+> **Note**
+> Circuite Breaker is in CLOSE State
 ![Student-Get](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/87db2407-5863-41c8-8fe7-78e8dc3ee259)
 - Get Status of circuit Breaker information:  [Step 4]
 ![Circuit Breaker-Close](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5dffc5e3-44cb-43cb-be3b-70f4e74cd497)
+- Stop Payment service:  [Step 5]
+- Get Student details along with Payment: [step 6]
+- ![Student-Get-Error](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f4b2340f-24dd-476d-85fc-0f68e2462946)
+> **Note**
+> Circuite Breaker is in HALF_OPEN State. Once it reaches to failed threshold mentioned in te configuration above.
 
