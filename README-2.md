@@ -10,7 +10,13 @@ This is a microservice pattern and principles for creating fault isolation betee
 - `wait-duration-in-open-state`: If triggered, wait at least “wait-duration-in-open-state” seconds before allowing more calls.
 - `permitted-number-of-calls-in-half-open-state`: After “wait-duration-in-open-state” time has passed, allow another “permitted-number-of-calls-in-half-open-state” requests and wait for them to calculate the failure rate again.
 - `sliding-window-size`: Record the result of the last “sliding-window-size” seconds.
+  
+  ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f8380fc7-d912-4c79-9cfb-3db14004034e)
+
 # Architecture
 ![Student-Management-Day2](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5008ee49-8046-4594-be9e-7d0861327e84)
 # Build & Deploy
 Please follow the same steps mentioned in **README.md**
+> **Note**  
+> This time Student service and Payment Service are deployed in dynamic port as there can be multiple instances of both services to manage load. `server.port = 0`
+# Build & Deploy
