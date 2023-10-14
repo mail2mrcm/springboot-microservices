@@ -1,5 +1,15 @@
-- # springboot-microservices-basic  
-  _This is a spring boot based microsevice style application for student managment system. It used various sping components like spring config server, netflix eurek server as discovery    service, spring api gateway, openfeign for inter communication etc._
+- # Microservice Design Patterns and Principles with example
+Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article, We will discuss and demonstrated important design pattern and principles that generally being followed to acheive aglity, scalability, resilience in microservices based application. 
+
+- # Important Design Patterns
+  - Database per Service **Note** <span style='color: red;'>Database Pattern</span>.
+  - Externalized Configuration
+  - API Gateway
+  - Circuit Breaker
+  - Service Discovery
+  - Distributed Tracing
+  - Health Check
+- This is a spring boot based microsevice style application for student managment system. It used various sping components like spring config server, netflix eurek server as discovery    service, spring api gateway, openfeign for inter communication etc._
 
 - ## Technology stack
   - java 17 (JDK 17)
