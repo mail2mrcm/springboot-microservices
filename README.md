@@ -3,9 +3,10 @@ Microservice architecture has become very popular due to it's aglity, scalabilit
 
 - # Important Design Patterns
   - Database per Service ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Database Pattern`
-    One important criteria of microservice is loosely couple 
+    <p>One important criteria of microservice is must be loosely coupled so that it can be built, maintained and deployed   independently.Sometime, each service may have different data storage requirement and easy replication is also a client ask in order to scale. To mange these, database per service is a good approach where restriction of the database can be controlled by only specific service, can be scaled based on the demand, size of the database will be small as compare as database per application which turns easy maintenance.</p>
   - API Gateway ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Integration Pattern`
-  - Externalized Configuration ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutting Concern Pattern`
+    <p>Most of the cases an application can contains more than thousand of microservices and each microservice have diffrent end points so managing all servicess a common access point is necessary. API Gateway creates an common entry gate for all microservices of the application or for group of microservices of the application and routes the traffic to concerned services as a proxy. Additionally, it provides features like aggregation of services, caching, authentication and rate limiting etc</p>
+  - Externalized Configuration ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutt Aling Concern Pattern`
   - Circuit Breaker ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutting Concern Pattern`
   - Service Discovery ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutting Concern Pattern`
   - Distributed Tracing ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Observability Patterns`
