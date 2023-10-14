@@ -2,13 +2,15 @@
 Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article, We will discuss and demonstrated important design pattern and principles that generally being followed to acheive aglity, scalability, resilience in microservices based application. 
 
 - # Important Design Patterns
-  - Database per Service **Note** <span style='color: red;'>Database Pattern</span>.
-  - Externalized Configuration
-  - API Gateway
-  - Circuit Breaker
-  - Service Discovery
-  - Distributed Tracing
-  - Health Check
+  - Database per Service ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Database Pattern`
+    One important criteria of microservice is loosely couple 
+  - API Gateway ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Integration Pattern`
+  - Externalized Configuration ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutting Concern Pattern`
+  - Circuit Breaker ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutting Concern Pattern`
+  - Service Discovery ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutting Concern Pattern`
+  - Distributed Tracing ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Observability Patterns`
+  - Health Check ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Observability Patterns`
+    
 - This is a spring boot based microsevice style application for student managment system. It used various sping components like spring config server, netflix eurek server as discovery    service, spring api gateway, openfeign for inter communication etc._
 
 - ## Technology stack
