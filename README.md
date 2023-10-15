@@ -38,7 +38,14 @@ Hare, we have used spring boot framework to implement "School Managment Software
 We also have provided an overall archtecture diagram for clarity and better understanding. Definitely there is scope for improvement and we will be adding more features to make it robust and secure further.
   ![Student-Management](https://github.com/mail2mrcm/tech4all/assets/118661926/4104fa46-8183-4b7c-83a5-f8afc0f764ca)
 
-- ## Project Structure & Components  :
+- ## Project Structure & Components
+As said above, spring boot framework is used for the development, various spring boot and spring cloud provided components/libraries are used to build this architecture. 
+|Spring cloud Components|Purpose|
+|-----------------------|-------|
+|Spring Config Server|This is used for externalize the configurations|
+|Spring API Gateway|This is used to create common entry of all APIs involved|
+|Spring boot Resilience4j| This library used for circuit breaker|
+
   ![image](https://github.com/mail2mrcm/tech4all/assets/118661926/a567b87c-0729-44aa-bf43-283a66fecb62)
   - `Spring Config server` - This is used to externalize application configurations. [Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
      I have loaded configuration from resources so used profile = native and all configurations are available under /config of resources location.
