@@ -54,6 +54,10 @@ As said above, spring boot framework is used for the development, various spring
 >[!NOTE]
 >I have created various version of the project in the repository and each project is added with some additional features/libraries/components
 >but tried to maintain every next version must have all libraries pervious version contained. Also created one line of description against each version for clarity.
+These are the versions are currently available in repository
+- springboot-microservices-basic (I have explained this here)
+- springboot-microservice-with-circuitbreaker [README](https://github.com/mail2mrcm/springboot-microservices/edit/main/README-2.md)
+- springboot-microservices-circuitebreaker-distributed-tracing [README](https://github.com/mail2mrcm/springboot-microservices/edit/main/README-3.md)
 
   ![image](https://github.com/mail2mrcm/tech4all/assets/118661926/a567b87c-0729-44aa-bf43-283a66fecb62)
   - `Spring Config server` - This is used to externalize application configurations. [Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
