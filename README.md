@@ -1,5 +1,5 @@
 - # Microservice Design Patterns and Principles with example
-Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article, We will discuss and demonstrated important design patterns and principles that are mostly being followed to acheive aglity, scalability, resilience in microservices based application. 
+Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article, I will discuss and demonstrated important design patterns and principles that are mostly being followed to acheive aglity, scalability, resilience in microservices based application. 
 
 - # Important Design Patterns
   - Database per Service ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Database Pattern`
@@ -17,7 +17,7 @@ Microservice architecture has become very popular due to it's aglity, scalabilit
   - Health Check ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Observability Patterns`
      <p> To detect correct status of the service is very important so that request will not be routed to any unhealth service. /health API is used to validate the status of the service and based on that instance can be declared as healthy or unhealthy. </p> 
 - # Use Case
-<p> We have considered a simple use case to demonstrate the above said design patterns and principles. A educational society has decided to launch few model schools for child to provide better way of learning. They are looking for a "School Managment Software" to perform most operations though online processes </p>
+<p> I have considered a simple use case to demonstrate the above said design patterns and principles. A educational society has decided to launch few model schools for child to provide better way of learning. They are looking for a "School Managment Software" to perform most operations though online processes </p>
 
 - Society can add new school in system and also can update various parameters of existing school like location, school governance details.
 - Society has the the authority to delete school from the list.
@@ -27,7 +27,7 @@ Microservice architecture has become very popular due to it's aglity, scalabilit
 - Student can make payment of the fees.
  
 - ## Technology stack
-Hare, we have used spring boot framework to implement "School Managment Software" by considering above design patterns. Below are the technology stacks involved:
+Hare, I have used spring boot framework to implement "School Managment Software" by considering above design patterns. Below are the technology stacks involved:
   - java 17 (JDK 17)
   - Spring Boot 3.1.3
   - Spring Cloud 2022.0.4
@@ -35,7 +35,7 @@ Hare, we have used spring boot framework to implement "School Managment Software
   - H2 Database.
 
 - ## Architecture
-We also have provided an overall archtecture diagram for clarity and better understanding. Definitely there is scope for improvement and we will be adding more features to make it robust and secure further.
+I also have provided an overall archtecture diagram for clarity and better understanding. Definitely there is scope for improvement and I will be adding more features to make it robust and secure further.
   ![Student-Management](https://github.com/mail2mrcm/tech4all/assets/118661926/4104fa46-8183-4b7c-83a5-f8afc0f764ca)
 
 - ## Project Structure & Components
@@ -49,6 +49,9 @@ As said above, spring boot framework is used for the development, various spring
 |Spring Boot Actuator| This is used for health check of the application|[Health Check](https://www.baeldung.com/spring-boot-actuators)
 |Spring Cloud OpenFeign|This is used as rest client for internal communication|[Rest Client](https://www.baeldung.com/spring-cloud-openfeign)
 
+>[!NOTE]
+>I have created various version of the project in the repository and each project is added with some additional features/libraries/components
+>but tried to maintain every next version must have all libraries pervious version contained. Also created one line of description against each version for clarity.
 
   ![image](https://github.com/mail2mrcm/tech4all/assets/118661926/a567b87c-0729-44aa-bf43-283a66fecb62)
   - `Spring Config server` - This is used to externalize application configurations. [Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
