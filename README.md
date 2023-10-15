@@ -16,13 +16,23 @@ Microservice architecture has become very popular due to it's aglity, scalabilit
     <p> In microservice architecture, request often span across different services to perform various operations. It is quite difficult to trace the request and response of service call for quick troubleshooting. Distributed Tracing patterns help to associate Trace Id and Span Id in each service call and Trace Id will be same for entire round trip of the request but Span Id will be diffrent for any intermediary service call. So using Trace Id entire journey/call stack can be idetified.</p>
   - Health Check ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Observability Patterns`
      <p> To detect correct status of the service is very important so that request will not be routed to any unhealth service. /health API is used to validate the status of the service and based on that instance can be declared as healthy or unhealthy. </p> 
-- # Demonstrate use case
-<p> We have used a very simple use case to demonstrate the above said design patterns and principles. A society has decided to launch few child schools in various locality for providing better way of learning. They are looking for a "School Managment Software" to perform below activities </p>
+- # Use Case
+<p> We have considered a simple use case to demonstrate the above said design patterns and principles. A educational society has decided to launch few model schools for child to provide better way of learning. They are looking for a "School Managment Software" to perform most operations though online processes </p>
+
+- Society can add new school in system and also can update various parameters of existing school like location, school governance details.
+- Society has the the authority to delete school from the list.
+- Society can add/update/delete student in a school.
+- School Fees for student can be generated monthly basis.
+- Studdent can view their details and correct in case necessary.
+- Student can make payment of the fees.
+ 
 - ## Technology stack
+We have used spring boot framework to develop various microservices for "School Managment Software". Below are the technologu stacks involved:
   - java 17 (JDK 17)
   - Spring Boot 3.1.3
   - Spring Cloud 2022.0.4
   - Maven 3.9.2
+  - H2 Database.
 
 - ## Architecture
   ![Student-Management](https://github.com/mail2mrcm/tech4all/assets/118661926/4104fa46-8183-4b7c-83a5-f8afc0f764ca)
