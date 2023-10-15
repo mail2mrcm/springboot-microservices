@@ -1,0 +1,33 @@
+eureka:
+  client:
+   service-url:
+    defaultZone: http://localhost:9091/eureka/
+spring:
+ cloud:
+  gateway:
+   discovery:
+    locator:
+     enabled: true
+   routes: 
+    - id: student-service
+      uri: lb://student-service
+      predicates: 
+       - Path=/api/1.0/student/**
+      filters:
+       - RewritePath=/api/1.0/student/(?<path>.*), /$\{path}
+    - id: student-service-health
+      uri: lb://student-service
+      predicates: 
+       - Path=/api/1.0/student/actuator/**
+      filters:
+       - RewritePath=/api/1.0/student/(?<path>.*), /$\{path}
+    - id: payment-service
+      uri: lb://payment-service
+      predicates: 
+       - Path=/api/1.0/payment/**
+      filters:
+       - RewritePath=/api/1.0/payment/(?<path>.*), /$\{path}
+management:
+ tracing:
+  sampling:
+   probability: 1.0 
