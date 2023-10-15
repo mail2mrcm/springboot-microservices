@@ -48,6 +48,8 @@ As said above, spring boot framework is used for the development, various spring
 |Netflix Eureka |This is used for service registry|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)
 |Spring Boot Actuator| This is used for health check of the application|[Health Check](https://www.baeldung.com/spring-boot-actuators)
 |Spring Cloud OpenFeign|This is used as rest client for internal communication|[Rest Client](https://www.baeldung.com/spring-cloud-openfeign)
+|Spring Micometer| This components is used for tracing request and response|[Micometer](https://www.baeldung.com/spring-boot-3-observability)
+|H2 Database| Dedicated H2 database is used for every microservices involved in this project|
 
 >[!NOTE]
 >I have created various version of the project in the repository and each project is added with some additional features/libraries/components
