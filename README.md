@@ -40,11 +40,15 @@ We also have provided an overall archtecture diagram for clarity and better unde
 
 - ## Project Structure & Components
 As said above, spring boot framework is used for the development, various spring boot and spring cloud provided components/libraries are used to build this architecture. 
-|Spring cloud Components|Purpose|
-|-----------------------|-------|
-|Spring Config Server|This is used for externalize the configurations|
-|Spring API Gateway|This is used to create common entry of all APIs involved|
-|Spring boot Resilience4j| This library used for circuit breaker|
+|Spring Libraries/Components|Purpose|Reference|
+|---------------------------|-------|---------|
+|Spring cloud Config Server|This is used for externalize the configurations|[Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
+|Spring cloud API Gateway|This is used to create common entry of all APIs involved|[service registry](https://spring.io/guides/gs/service-registration-and-discovery/) 
+|Spring boot Resilience4j| This library used for circuit breaker|[Circuit Breaker](https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/)
+|Netflix Eureka |This is used for service registry|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)
+|Spring Boot Actuator| This is used for health check of the application|[Health Check](https://www.baeldung.com/spring-boot-actuators)
+|Spring Cloud OpenFeign|This is used as rest client for internal communication|[Rest Client](https://www.baeldung.com/spring-cloud-openfeign)
+
 
   ![image](https://github.com/mail2mrcm/tech4all/assets/118661926/a567b87c-0729-44aa-bf43-283a66fecb62)
   - `Spring Config server` - This is used to externalize application configurations. [Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
