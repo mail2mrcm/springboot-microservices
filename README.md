@@ -1,5 +1,5 @@
 - # Microservice Design Patterns and Principles with example
-Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article, We will discuss and demonstrated important design pattern and principles that generally being followed to acheive aglity, scalability, resilience in microservices based application. 
+Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article, We will discuss and demonstrated important design patterns and principles that are mostly being followed to acheive aglity, scalability, resilience in microservices based application. 
 
 - # Important Design Patterns
   - Database per Service ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Database Pattern`
@@ -16,7 +16,8 @@ Microservice architecture has become very popular due to it's aglity, scalabilit
     <p> In microservice architecture, request often span across different services to perform various operations. It is quite difficult to trace the request and response of service call for quick troubleshooting. Distributed Tracing patterns help to associate Trace Id and Span Id in each service call and Trace Id will be same for entire round trip of the request but Span Id will be diffrent for any intermediary service call. So using Trace Id entire journey/call stack can be idetified.</p>
   - Health Check ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Observability Patterns`
      <p> To detect correct status of the service is very important so that request will not be routed to any unhealth service. /health API is used to validate the status of the service and based on that instance can be declared as healthy or unhealthy. </p> 
- 
+- # Demonstrate use case
+<p> We have used a very simple use case to demonstrate the above said design patterns and principles. A society has decided to launch few child schools in various locality for providing better way of learning. They are looking for a "School Managment Software" to perform below activities </p>
 - ## Technology stack
   - java 17 (JDK 17)
   - Spring Boot 3.1.3
