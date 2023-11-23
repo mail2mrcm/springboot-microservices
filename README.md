@@ -36,7 +36,8 @@ Here, I have used spring boot framework to implement "School Managment Software"
 
 - ## Architecture
 I also have provided an overall archtecture diagram for clarity and better understanding. Definitely there is scope for improvement and I will be adding more features to make it robust and secure further.
-  ![Student-Management](https://github.com/mail2mrcm/tech4all/assets/118661926/4104fa46-8183-4b7c-83a5-f8afc0f764ca)
+  ![Student-Management](![school-management-architecture-img](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/03c3e807-886b-40bd-8d4f-101127f45da5)
+)
 
 - ## Project Structure & Components
 As said above, spring boot framework is used for the development, various spring boot and spring cloud provided components/libraries are used to build this architecture. 
