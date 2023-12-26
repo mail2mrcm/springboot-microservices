@@ -1,0 +1,92 @@
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    service-url:
+      defaultZone: http://localhost:9091/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+ 
+# circuit breaker configuration
+resilience4j:
+  circuitbreaker:
+    configs:
+      defaults:
+        registerHealthIndicator: true
+        sliding-window-type: COUNT_BASED
+        failure-rate-threshold: 50
+        minimum-number-of-calls: 3
+        automatic-transition-from-open-to-half-open-enabled: true
+        wait-duration-in-open-state: 5s
+        permitted-number-of-calls-in-half-open-state: 3
+        sliding-window-size: 10
+        register-health-indicator: true
+  timelimiter:
+    configs:
+      defaults:
+        timeoutDuration: 10s
+        cancelRunningFuture: true
+spring:
+  cloud:
+    gateway:      
+      routes:        
+        - id: school-service
+          uri: lb://school-service
+          predicates: 
+            - Path=/api/1.0/school/**
+          filters:
+            - name: CircuitBreaker
+              args:
+                name: schoolSeviceCircuitBreaker
+                fallbackUri: forward:/systemFailure
+            - RewritePath=/api/1.0/school/(?<path>.*), /$\{path}
+        - id: student-service
+          uri: lb://student-service
+          predicates:
+            - Path=/api/1.0/student/**
+          filters:
+            - RewritePath=/api/1.0/student/(?<path>.*), /$\{path}
+            - name: CircuitBreaker
+              args:
+                name: studentSeviceCircuitBreaker
+                fallbackUri: forward:/systemFailure
+        - id: payment-service
+          uri: lb://payment-service
+          predicates:
+            - Path=/api/1.0/payment/**
+          filters:
+            - RewritePath=/api/1.0/payment/(?<path>.*), /$\{path}
+            - name: CircuitBreaker
+              args:
+                name: paymentSeviceCircuitBreaker
+                fallbackUri: forward:/systemFailure
+        - id: student-service-health
+          uri: lb://student-service
+          predicates: 
+           - Path=/api/1.0/student/actuator/**
+          filters:
+            - RewritePath=/api/1.0/student/(?<path>.*), /$\{path}          
+
+  
+# Service routing block and resource server configuration
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9999
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: health
+  health:
+    circuitbreakers:
+      enabled:  true
+  tracing:
+    sampling:
+      probability: 1.0 

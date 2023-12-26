@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: service-discovery
+  config:
+    import: "optional:configserver:http://localhost:9090"
+server:
+  port: 9091
+
+   

@@ -1,8 +1,0 @@
-server:
- port: 9093
-
-spring:
- config:
-  import: "optional:configserver:http://localhost:9090"
- application:
-  name: gateway-service

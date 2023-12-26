@@ -1,0 +1,26 @@
+
+server:
+  port: 9999
+
+spring:
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          client:
+            registration:
+              client-id: "client"
+              client-secret: "{noop}secret"
+              client-authentication-methods:
+                - "client_secret_basic"
+              authorization-grant-types:
+                - "authorization_code"
+                - "refresh_token"
+              redirect-uris:
+                - "http://test"
+               # - "http://127.0.0.1:9093/login/oauth2/code/spring"
+              scopes:                
+                - "read"
+                - "write"
+            require-authorization-consent: false
+            require-proof-key: false

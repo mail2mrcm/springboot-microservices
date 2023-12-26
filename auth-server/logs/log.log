@@ -1,0 +1,744 @@
+21-10-2023 01:46:06.187   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 20556 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 01:46:06.198   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 01:46:06.258   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 01:46:22.218   INFO  - Started AuthServerApplicationTests in 17.316 seconds (process running for 22.67)
+21-10-2023 03:27:22.246   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 30508 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 03:27:22.266   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 03:27:22.271   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 03:27:35.752   INFO  - Started AuthServerApplicationTests in 14.836 seconds (process running for 34.278)
+21-10-2023 03:37:57.159   INFO  - Starting AuthServerApplication using Java 17.0.8.1 with PID 25524 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 03:37:57.170   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 03:37:57.179   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 03:38:25.638   INFO  - Started AuthServerApplication in 29.879 seconds (process running for 36.617)
+21-10-2023 04:57:12.814   INFO  - Starting AuthServerApplication using Java 17.0.8.1 with PID 8688 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 04:57:12.824   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 04:57:12.845   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 04:57:45.821   INFO  - Started AuthServerApplication in 34.824 seconds (process running for 36.869)
+21-10-2023 05:33:35.058   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 30484 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 05:33:35.070   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 05:33:35.153   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 05:34:16.476   INFO  - Started AuthServerApplicationTests in 43.596 seconds (process running for 52.668)
+21-10-2023 05:35:34.655   INFO  - Starting AuthServerApplication using Java 17.0.8.1 with PID 28692 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 05:35:34.681   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 05:35:34.685   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 05:36:22.855   INFO  - Started AuthServerApplication in 52.48 seconds (process running for 58.529)
+21-10-2023 14:39:14.399   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 16552 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 14:39:14.527   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 14:39:14.529   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 14:39:33.948   INFO  - Started AuthServerApplicationTests in 21.468 seconds (process running for 27.523)
+21-10-2023 14:40:36.550   INFO  - Starting AuthServerApplication using Java 17.0.8.1 with PID 32720 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 14:40:36.617   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 14:40:36.675   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 14:41:01.110   INFO  - Started AuthServerApplication in 26.298 seconds (process running for 28.078)
+21-10-2023 21:22:42.260   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 20392 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 21:22:42.286   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 21:22:42.294   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 21:23:01.811   INFO  - Started AuthServerApplication in 21.515 seconds (process running for 23.928)
+21-10-2023 21:30:59.506   ERROR - [THYMELEAF][http-nio-9999-exec-1] Exception processing template "login": Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+21-10-2023 21:30:59.864   ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+21-10-2023 21:31:17.600   ERROR - [THYMELEAF][http-nio-9999-exec-5] Exception processing template "login": Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+21-10-2023 21:31:17.687   ERROR - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [login], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077)
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372)
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+21-10-2023 21:40:53.421   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 17336 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 21:40:53.438   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 21:40:53.465   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 21:41:24.829   INFO  - Started AuthServerApplicationTests in 33.278 seconds (process running for 42.255)
+21-10-2023 21:42:06.943   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 26544 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 21:42:07.001   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 21:42:07.008   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 21:42:31.017   INFO  - Started AuthServerApplication in 26.424 seconds (process running for 28.634)
+21-10-2023 22:27:39.269   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 22524 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 22:27:39.337   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 22:27:39.341   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 22:28:35.919   INFO  - Started AuthServerApplication in 61.099 seconds (process running for 64.661)
+21-10-2023 22:38:24.078   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 27416 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+21-10-2023 22:38:24.178   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+21-10-2023 22:38:24.269   INFO  - No active profile set, falling back to 1 default profile: "default"
+21-10-2023 22:39:15.530   INFO  - Started AuthServerApplication in 54.321 seconds (process running for 57.772)
+22-10-2023 03:57:29.429   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 9220 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 03:57:29.600   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 03:57:29.679   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 03:58:07.709   INFO  - Started AuthServerApplication in 41.973 seconds (process running for 45.212)
+22-10-2023 04:15:25.427   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 25044 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 04:15:25.583   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 04:15:25.586   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 04:15:55.851   INFO  - Started AuthServerApplication in 33.701 seconds (process running for 36.16)
+22-10-2023 04:34:54.509   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 5972 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 04:34:54.632   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 04:34:54.635   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 04:35:26.800   INFO  - Started AuthServerApplication in 34.623 seconds (process running for 36.547)
+22-10-2023 16:59:07.266   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 13724 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 16:59:07.325   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 16:59:07.349   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 16:59:41.231   INFO  - Started AuthServerApplication in 36.815 seconds (process running for 38.635)
+22-10-2023 19:11:41.052   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 15916 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 19:11:41.130   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 19:11:41.193   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 19:12:06.425   INFO  - Started AuthServerApplication in 28.1 seconds (process running for 29.871)
+22-10-2023 19:25:52.544   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 16568 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 19:25:52.647   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 19:25:52.736   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 19:26:19.964   ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+22-10-2023 19:26:45.405   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 3304 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 19:26:45.405   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 19:26:45.492   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 19:27:03.826   INFO  - Started AuthServerApplication in 20.433 seconds (process running for 22.119)
+22-10-2023 19:34:24.483   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 25332 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 19:34:24.588   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 19:34:24.603   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 19:34:38.512   ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Method authorizationServerSecurityFilterChain in com.hello2chandan.authserver.config.AuthzConfig required a bean of type 'org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.oauth2.server.authorization.client.RegisteredClientRepository' in your configuration.
+
+22-10-2023 19:40:57.339   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 21968 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 19:40:57.409   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 19:40:57.474   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 19:41:20.574   INFO  - Started AuthServerApplication in 25.206 seconds (process running for 27.04)
+22-10-2023 23:10:09.603   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 10152 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+22-10-2023 23:10:09.626   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-10-2023 23:10:09.632   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-10-2023 23:10:39.637   INFO  - Started AuthServerApplication in 32.611 seconds (process running for 34.417)
+23-10-2023 02:56:16.889   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 26536 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+23-10-2023 02:56:16.899   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+23-10-2023 02:56:16.916   INFO  - No active profile set, falling back to 1 default profile: "default"
+23-10-2023 02:56:38.914   INFO  - Started AuthServerApplication in 23.85 seconds (process running for 25.486)
+23-10-2023 04:11:29.537   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 25316 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+23-10-2023 04:11:29.552   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+23-10-2023 04:11:29.611   INFO  - No active profile set, falling back to 1 default profile: "default"
+23-10-2023 04:11:51.250   INFO  - Started AuthServerApplication in 23.403 seconds (process running for 25.005)
+23-10-2023 05:21:09.301   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 28012 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+23-10-2023 05:21:09.350   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+23-10-2023 05:21:09.370   INFO  - No active profile set, falling back to 1 default profile: "default"
+23-10-2023 05:21:37.602   INFO  - Started AuthServerApplication in 30.954 seconds (process running for 32.917)
+28-10-2023 04:11:54.815   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 3628 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+28-10-2023 04:11:54.973   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+28-10-2023 04:11:55.107   INFO  - No active profile set, falling back to 1 default profile: "default"
+28-10-2023 04:12:54.522   INFO  - Started AuthServerApplication in 67.317 seconds (process running for 78.095)
+28-10-2023 05:18:23.997   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 25456 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+28-10-2023 05:18:24.182   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+28-10-2023 05:18:24.240   INFO  - No active profile set, falling back to 1 default profile: "default"
+28-10-2023 05:18:57.406   INFO  - Started AuthServerApplication in 37.201 seconds (process running for 40.268)
+30-10-2023 17:55:33.364   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 15152 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+30-10-2023 17:55:33.380   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+30-10-2023 17:55:33.380   INFO  - No active profile set, falling back to 1 default profile: "default"
+30-10-2023 17:55:50.903   INFO  - Started AuthServerApplication in 19.948 seconds (process running for 22.087)
+30-10-2023 17:57:50.139   INFO  - Starting AuthServerApplication using Java 17.0.7 with PID 2160 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\classes started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+30-10-2023 17:57:50.170   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+30-10-2023 17:57:50.191   INFO  - No active profile set, falling back to 1 default profile: "default"
+30-10-2023 17:58:24.233   INFO  - Started AuthServerApplication in 36.654 seconds (process running for 39.604)
+09-12-2023 17:37:36.347   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 68424 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+09-12-2023 17:37:36.363   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+09-12-2023 17:37:36.363   INFO  - No active profile set, falling back to 1 default profile: "default"
+09-12-2023 17:37:52.654   INFO  - Started AuthServerApplicationTests in 17.146 seconds (process running for 22.234)
+09-12-2023 17:38:24.773   INFO  - Starting AuthServerApplication v0.0.1-SNAPSHOT using Java 17.0.7 with PID 70164 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\auth-server-0.0.1-SNAPSHOT.jar started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+09-12-2023 17:38:24.867   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+09-12-2023 17:38:24.914   INFO  - No active profile set, falling back to 1 default profile: "default"
+09-12-2023 17:38:42.186   ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9999 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9999 or configure this application to listen on another port.
+
+09-12-2023 17:40:02.734   INFO  - Starting AuthServerApplication v0.0.1-SNAPSHOT using Java 17.0.7 with PID 51988 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\auth-server-0.0.1-SNAPSHOT.jar started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+09-12-2023 17:40:02.832   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+09-12-2023 17:40:02.894   INFO  - No active profile set, falling back to 1 default profile: "default"
+09-12-2023 17:40:22.184   INFO  - Started AuthServerApplication in 20.933 seconds (process running for 23.087)
+09-12-2023 21:40:24.834   INFO  - Starting AuthServerApplication v0.0.1-SNAPSHOT using Java 17.0.7 with PID 30188 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\auth-server-0.0.1-SNAPSHOT.jar started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+09-12-2023 21:40:24.866   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+09-12-2023 21:40:24.881   INFO  - No active profile set, falling back to 1 default profile: "default"
+09-12-2023 21:40:40.456   INFO  - Started AuthServerApplication in 16.777 seconds (process running for 18.894)
+09-12-2023 21:43:10.926   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 46564 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+09-12-2023 21:43:10.947   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+09-12-2023 21:43:10.947   INFO  - No active profile set, falling back to 1 default profile: "default"
+09-12-2023 21:43:24.290   INFO  - Started AuthServerApplicationTests in 14.154 seconds (process running for 18.844)
+09-12-2023 21:45:31.867   INFO  - Starting AuthServerApplication v0.0.1-SNAPSHOT using Java 17.0.7 with PID 48608 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\auth-server-0.0.1-SNAPSHOT.jar started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+09-12-2023 21:45:31.914   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+09-12-2023 21:45:31.976   INFO  - No active profile set, falling back to 1 default profile: "default"
+09-12-2023 21:45:48.669   INFO  - Started AuthServerApplication in 18.211 seconds (process running for 20.051)
+10-12-2023 04:36:41.357   INFO  - Starting AuthServerApplicationTests using Java 17.0.7 with PID 39080 (started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+10-12-2023 04:36:41.357   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+10-12-2023 04:36:41.357   INFO  - No active profile set, falling back to 1 default profile: "default"
+10-12-2023 04:36:56.562   INFO  - Started AuthServerApplicationTests in 16.355 seconds (process running for 19.961)
+10-12-2023 04:37:15.173   INFO  - Starting AuthServerApplication v0.0.1-SNAPSHOT using Java 17.0.7 with PID 43824 (C:\Coode-Repository\springboot-microservices-basic\auth-server\target\auth-server-0.0.1-SNAPSHOT.jar started by KRITIENT in C:\Coode-Repository\springboot-microservices-basic\auth-server)
+10-12-2023 04:37:15.203   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+10-12-2023 04:37:15.203   INFO  - No active profile set, falling back to 1 default profile: "default"
+10-12-2023 04:37:30.891   INFO  - Started AuthServerApplication in 17.382 seconds (process running for 19.315)
+22-12-2023 23:50:09.826   INFO  - Starting AuthServerApplicationTests using Java 17.0.9 with PID 10552 (started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+22-12-2023 23:50:09.836   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+22-12-2023 23:50:09.838   INFO  - No active profile set, falling back to 1 default profile: "default"
+22-12-2023 23:50:16.486   INFO  - Started AuthServerApplicationTests in 7.112 seconds (process running for 8.916)
+24-12-2023 12:39:41.504   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 7272 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 12:39:41.516   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 12:39:41.520   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 12:39:49.936   INFO  - Started AuthServerApplication in 9.231 seconds (process running for 10.683)
+24-12-2023 12:47:54.917   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 15500 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 12:47:54.927   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 12:47:54.931   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 12:48:03.259   INFO  - Started AuthServerApplication in 9.034 seconds (process running for 10.328)
+24-12-2023 13:09:07.390   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 22956 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 13:09:07.402   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 13:09:07.406   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 13:09:16.682   INFO  - Started AuthServerApplication in 10.101 seconds (process running for 11.699)
+24-12-2023 14:57:26.751   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 24452 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 14:57:26.757   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 14:57:26.758   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 14:57:30.924   INFO  - Started AuthServerApplication in 4.536 seconds (process running for 5.23)
+24-12-2023 20:53:19.595   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 27528 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 20:53:19.607   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 20:53:19.610   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 20:53:27.866   INFO  - Started AuthServerApplication in 8.937 seconds (process running for 10.289)
+24-12-2023 21:31:36.290   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 21660 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 21:31:36.298   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 21:31:36.301   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 21:31:43.848   INFO  - Started AuthServerApplication in 8.305 seconds (process running for 9.638)
+24-12-2023 23:07:18.472   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 30160 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 23:07:18.482   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 23:07:18.485   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 23:07:26.387   INFO  - Started AuthServerApplication in 8.675 seconds (process running for 9.996)
+24-12-2023 23:24:09.899   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 28940 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 23:24:09.912   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 23:24:09.915   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 23:24:18.164   INFO  - Started AuthServerApplication in 8.969 seconds (process running for 10.566)
+24-12-2023 23:40:05.665   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 26504 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 23:40:05.686   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 23:40:05.694   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 23:40:13.265   INFO  - Started AuthServerApplication in 8.325 seconds (process running for 9.63)
+24-12-2023 23:54:05.979   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 32096 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+24-12-2023 23:54:05.991   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+24-12-2023 23:54:05.995   INFO  - No active profile set, falling back to 1 default profile: "default"
+24-12-2023 23:54:13.640   INFO  - Started AuthServerApplication in 8.328 seconds (process running for 9.638)
+25-12-2023 00:12:49.410   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 31440 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+25-12-2023 00:12:49.423   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+25-12-2023 00:12:49.426   INFO  - No active profile set, falling back to 1 default profile: "default"
+25-12-2023 00:12:57.266   INFO  - Started AuthServerApplication in 8.565 seconds (process running for 9.91)
+25-12-2023 00:49:58.995   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 31404 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+25-12-2023 00:49:58.999   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+25-12-2023 00:49:59.000   INFO  - No active profile set, falling back to 1 default profile: "default"
+25-12-2023 00:50:02.736   INFO  - Started AuthServerApplication in 4.067 seconds (process running for 4.773)
+25-12-2023 01:24:39.228   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 30492 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+25-12-2023 01:24:39.232   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+25-12-2023 01:24:39.233   INFO  - No active profile set, falling back to 1 default profile: "default"
+25-12-2023 01:24:43.187   INFO  - Started AuthServerApplication in 4.361 seconds (process running for 4.982)
+26-12-2023 11:43:37.947   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 17480 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+26-12-2023 11:43:37.957   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+26-12-2023 11:43:37.960   INFO  - No active profile set, falling back to 1 default profile: "default"
+26-12-2023 11:43:48.590   INFO  - Started AuthServerApplication in 11.462 seconds (process running for 13.255)

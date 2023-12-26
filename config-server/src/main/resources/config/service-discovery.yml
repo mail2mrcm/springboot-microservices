@@ -1,0 +1,21 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:   
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:9091/eureka/
+spring:
+  output:
+    ansi:
+      enabled: always
+   
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+
+logging:
+  pattern:
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'

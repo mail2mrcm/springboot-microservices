@@ -1,0 +1,49 @@
+eureka:
+  client:
+   service-url:
+    defaultZone: http://localhost:9091/eureka/
+spring:
+  cloud:
+    gateway:
+      default-filters:
+        - TokenRelay=
+        - RemoveRequestHeader=Cookie
+      routes:
+        - id: route
+          uri: lb://payment-service
+          predicates:
+            - Path=/api/1.0/payment/**
+          filters:
+            - RewritePath=/api/1.0/payment/(?<path>.*), /$\{path}
+        - id: student-service
+          uri: lb://student-service
+          predicates: 
+           - Path=/api/1.0/student/**
+          filters:
+           - RewritePath=/api/1.0/student/(?<path>.*), /$\{path}
+        - id: student-service-health
+          uri: lb://student-service
+          predicates: 
+           - Path=/api/1.0/student/actuator/**
+          filters:
+           - RewritePath=/api/1.0/student/(?<path>.*), /$\{path}
+
+  security:
+    oauth2:
+      client:
+        registration:
+          gateway:
+            provider: spring
+            client-id: client
+            client-secret: secret
+            scope: openid, profile, user.read
+            authorization-grant-type: authorization_code
+            client-authorization-method: client_secret_basic
+            redirect-uri: http://127.0.0.1:9093/login/oauth2/code/spring
+        provider:
+          spring:
+            issuer-uri: http://localhost:9999
+management:
+ tracing:
+  sampling:
+   probability: 1.0 
