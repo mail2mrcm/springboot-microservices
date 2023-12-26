@@ -54,10 +54,18 @@ As said above, spring boot framework is used for the development, various spring
 |Spring Resource Server|This is used for validating user's access and takes permit/deny actions while user tries to access APIs/resources. Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-oauth2-resource-server` is added in dependency. As this works on top of spring security so spring securtity dependency Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-security` is also added.|[Resource Server](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/index.html)
 
   ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f68de201-2c2b-4c5c-bded-90c67821bd68")
-  - `Spring Config server` - This is used to externalize application configurations. [Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
-     I have loaded configuration from resources so used profile = native and all configurations are available under /config of resources location.
-      
-  - `Netflix Eureka as Service discvery` - This is for service registry. configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
+  - `config-server` - This application is used for external configuration. I have used native profile `(profiles.active=native)` to store all configurations under /resources/config of the application. You can use any other souce of configuration like git, database, vault etc and for that necessary properties need to be added in application.yml file. I have created a properties file for each of corresponding client application to store all related configuration of that application.
+    To enable spring config server below action has been taken
+    - `@EnableConfigServer` annotation is added in spring boot startup application class.
+    - Added profiles.active=native properties in application.yml file
+    - Created client application wise YML properties file in /resources/config location
+    - Config server dependency is added in POM.xml file
+      `<dependency>
+			    <groupId>org.springframework.cloud</groupId>
+			   <artifactIdspring-cloud-config-server</artifactId>
+		   </dependency>`
+    
+  - `service-discovery` - This is for service registry. configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
   - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
