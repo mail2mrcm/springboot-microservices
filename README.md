@@ -1,7 +1,7 @@
 - # Microservice Design Patterns and Principles with example
 Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article,  have explained and demonstrated important design patterns and principles that are mostly being followed for microservice style application. 
  
-- # Brief explanation of key design principles for microservices architecture:
+- # Brief explanation of key design principles for microservices architecture that we have used in the project:
   - <b>Database per Service ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Database Pattern`</b>
     <p>One important criteria of microservice is must be loosely coupled so that it can be built, maintained and deployed   independently.Sometime, each service may have different data storage requirement and easy replication is also a client ask in order to scale. To mange these, database per service is a good approach where restriction of the database can be controlled by only specific service, can be scaled based on the demand, size of the database will be small as compare as database per application which turns easy maintenance.</p>
   - <b>API Gateway ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Integration Pattern`</b>
