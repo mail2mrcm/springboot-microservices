@@ -62,7 +62,7 @@ To enable spring config server below action has been taken
 		   </dependency>`
     
 - `service-discovery` - This application works as service registry and service discovery. When an instance of client application is started, immediately registered itself in service registry so that other application can find it  and can perform inter communication. Here api-gateway, school-service, payment-service, student-service are considered as client application.
-    To enable service discovery below actions have been taken
+To enable service discovery below actions have been taken
     - `@EnableEurekaServer` annotation is added in spring boot startup application class.
     -  Config server dependency is added in POM.xml file
       `<dependency>
@@ -71,7 +71,8 @@ To enable spring config server below action has been taken
 	</dependency>`
     -  Application name (service-discovery) is added `application.yml` file
     -  `service-discovery.yml` properties file is added in config-server application for storing all configuration required to run service-discovery application.
-    
+    <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f2e9ebb5-3720-4c3c-aa86-127135a51fc0">
+
   - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
