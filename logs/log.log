@@ -1,8 +1,0 @@
-22-12-2023 23:48:43.766   INFO  - Starting PaymentServiceApplication using Java 17.0.9 with PID 20568 (C:\Chandan\Coode-Repository\springboot-microservices\payment-service\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices)
-22-12-2023 23:48:43.772   DEBUG - Running with Spring Boot v3.1.3, Spring v6.0.11
-22-12-2023 23:48:43.775   INFO  - No active profile set, falling back to 1 default profile: "default"
-22-12-2023 23:48:55.903   INFO  - Started PaymentServiceApplication in 14.076 seconds (process running for 15.204)
-22-12-2023 23:50:39.034   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 19096 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices)
-22-12-2023 23:50:39.043   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
-22-12-2023 23:50:39.045   INFO  - No active profile set, falling back to 1 default profile: "default"
-22-12-2023 23:50:46.313   INFO  - Started AuthServerApplication in 8.098 seconds (process running for 9.196)

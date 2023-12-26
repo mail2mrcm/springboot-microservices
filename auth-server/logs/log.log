@@ -742,3 +742,7 @@ Identify and stop the process that's listening on port 9999 or configure this ap
 26-12-2023 11:43:37.957   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
 26-12-2023 11:43:37.960   INFO  - No active profile set, falling back to 1 default profile: "default"
 26-12-2023 11:43:48.590   INFO  - Started AuthServerApplication in 11.462 seconds (process running for 13.255)
+26-12-2023 12:26:51.386   INFO  - Starting AuthServerApplication using Java 17.0.9 with PID 28364 (C:\Chandan\Coode-Repository\springboot-microservices\auth-server\target\classes started by mail2 in C:\Chandan\Coode-Repository\springboot-microservices\auth-server)
+26-12-2023 12:26:51.398   DEBUG - Running with Spring Boot v3.1.5, Spring v6.0.13
+26-12-2023 12:26:51.400   INFO  - No active profile set, falling back to 1 default profile: "default"
+26-12-2023 12:26:59.592   INFO  - Started AuthServerApplication in 8.876 seconds (process running for 10.217)
