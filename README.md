@@ -44,13 +44,12 @@ I also have provided an overall architecture diagram for clarity purpose. Defini
 As said above, spring boot framework is used for the development, various spring boot and spring cloud provided components/libraries are used to build this architecture. 
 |Spring Libraries/Components|Purpose|Reference|
 |---------------------------|-------|---------|
-|Spring cloud Config |Config server is used for externalize the configurations|[Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)|
-|Spring cloud Gateway|This is an API gateway is used to create common entry of all APIs involved|[service registry](https://spring.io/guides/gs/service-registration-and-discovery/)|
-|Spring cloud Circuit Breaker| Resilience4j library used for fault tolerance and circuitbreaker|[Circuit Breaker](https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/)|
-|Spring cloud Netflix Eureka |This is client side service discovery allows services to find and communicate with each other without hard-coding the hostname and port|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)|
+|Spring Cloud Config |Config server is used for externalize the configurations|[Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)|
+|Spring Cloud Gateway|This is an API gateway is used to create common entry of all APIs involved|[service registry](https://spring.io/guides/gs/service-registration-and-discovery/)|
+|Spring Cloud Circuit Breaker| Resilience4j library used for fault tolerance and circuitbreaker|[Circuit Breaker](https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/)|
+|Spring Cloud Netflix Eureka |This is client side service discovery allows services to find and communicate with each other without hard-coding the hostname and port|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)|
+|Spring Cloud Gateway |This is an API Gateway. Group Id `org.springframework.cloud` and artifact ID `spring-cloud-starter-gateway` is added in dependency for API Gateway feature|[Gateway](https://cloud.spring.io/spring-cloud-gateway/reference/html/)|
 |Spring Boot Actuator| This is used for health check of the application|[Health Check](https://www.baeldung.com/spring-boot-actuators)
-|Spring Cloud OpenFeign|This is used as rest client for internal communication|[Rest Client](https://www.baeldung.com/spring-cloud-openfeign)
-|Spring Micometer| This components is used for tracing request and response|[Micometer](https://www.baeldung.com/spring-boot-3-observability)
 |H2 Database| Dedicated H2 database is used for every microservices involved in this project. this is being used for demo purpose but for real application it should be any RDBMS or NoSQL database|
 
 >[!NOTE]
