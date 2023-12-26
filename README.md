@@ -28,19 +28,18 @@ Microservice architecture has become very popular due to it's aglity, scalabilit
 - Studdent can view their details and correct in case necessary.
 - Student can make payment of the fees.
  
-- ## Technology stack
+- # Technology Stacks
 Here, I have used spring boot framework to implement "School Managment Software" by considering above design patterns. Below are the technology stacks involved:
   - java 17 (JDK 17)
   - Spring Boot 3.1.3
   - Spring Cloud 2022.0.4
   - Maven 3.9.2
-  - H2 Database.
 
-- ## Architecture
+- # Architecture Diagram
 I also have provided an overall architecture diagram for clarity purpose. Definitely there is scope for improvement and I will be adding more features to make it robust further.
   ![Student-Management](![school-management-architecture-img](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/03c3e807-886b-40bd-8d4f-101127f45da5)
 
-- ## Project Structure & Components
+- # Project structure and various component details 
 As said above, spring boot framework is used for the development, various spring boot and spring cloud provided components/libraries are used to build this architecture. 
 |Spring Libraries/Components|Purpose|Reference|
 |---------------------------|-------|---------|
