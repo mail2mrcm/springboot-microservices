@@ -1,9 +1,9 @@
 - # Microservice Design Patterns and Principles with example
 Microservice architecture has become very popular due to it's aglity, scalability, resilience and maintainability. In this article,  have explained and demonstrated important design patterns and principles that are mostly being followed for microservice style application. 
  
-- # Brief explanation of key design principles for microservices architecture that we have used in the project:
+- # Brief explanation of key design principles for microservices architecture used in the project:
   - <b>Database per Service ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Database Pattern`</b>
-    <p>One important criteria of microservice is must be loosely coupled so that it can be built, maintained and deployed   independently.Sometime, each service may have different data storage requirement and easy replication is also a client ask in order to scale. To mange these, database per service is a good approach where restriction of the database can be controlled by only specific service, can be scaled based on the demand, size of the database will be small as compare as database per application which turns easy maintenance.</p>
+    <p>One important criteria of microservice is must be loosely coupled so that it can be built, maintained and deployed independently. Sometime, each service may have different data storage requirement and easy replication is also a client ask in order to scale. To mange these, database per service is a good approach where restriction of the database can be controlled by only specific service, can be scaled based on the demand, size of the database will be small as compare as database per application which turns easy maintenance.</p>
   - <b>API Gateway ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Integration Pattern`</b>
     <p>Most of the cases an application can contains more than thousand of microservices and each microservice have diffrent end points so managing all servicess a common access point is necessary. API Gateway creates an common entry gate for all microservices of the application or for group of microservices of the application and routes the traffic to concerned services as a proxy. Additionally, it provides features like aggregation of services, caching, authentication and rate limiting etc</p>
   - <b>Externalized Configuration ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Cross-Cutt Aling Concern Pattern`</b>
@@ -37,21 +37,21 @@ Here, I have used spring boot framework to implement "School Managment Software"
   - H2 Database.
 
 - ## Architecture
-I also have provided an overall archtecture diagram for clarity and better understanding. Definitely there is scope for improvement and I will be adding more features to make it robust and secure further.
+I also have provided an overall architecture diagram for clarity purpose. Definitely there is scope for improvement and I will be adding more features to make it robust further.
   ![Student-Management](![school-management-architecture-img](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/03c3e807-886b-40bd-8d4f-101127f45da5)
 
 - ## Project Structure & Components
 As said above, spring boot framework is used for the development, various spring boot and spring cloud provided components/libraries are used to build this architecture. 
 |Spring Libraries/Components|Purpose|Reference|
 |---------------------------|-------|---------|
-|Spring cloud Config Server|This is used for externalize the configurations|[Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
-|Spring cloud API Gateway|This is used to create common entry of all APIs involved|[service registry](https://spring.io/guides/gs/service-registration-and-discovery/) 
-|Spring boot Resilience4j| This library used for circuit breaker|[Circuit Breaker](https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/)
-|Netflix Eureka |This is used for service registry|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)
+|Spring cloud Config |Config server is used for externalize the configurations|[Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)|
+|Spring cloud Gateway|This is an API gateway is used to create common entry of all APIs involved|[service registry](https://spring.io/guides/gs/service-registration-and-discovery/)|
+|Spring cloud Circuit Breaker| Resilience4j library used for fault tolerance and circuitbreaker|[Circuit Breaker](https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/)|
+|Spring cloud Netflix Eureka |This is client side service discovery allows services to find and communicate with each other without hard-coding the hostname and port|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)|
 |Spring Boot Actuator| This is used for health check of the application|[Health Check](https://www.baeldung.com/spring-boot-actuators)
 |Spring Cloud OpenFeign|This is used as rest client for internal communication|[Rest Client](https://www.baeldung.com/spring-cloud-openfeign)
 |Spring Micometer| This components is used for tracing request and response|[Micometer](https://www.baeldung.com/spring-boot-3-observability)
-|H2 Database| Dedicated H2 database is used for every microservices involved in this project|
+|H2 Database| Dedicated H2 database is used for every microservices involved in this project. this is being used for demo purpose but for real application it should be any RDBMS or NoSQL database|
 
 >[!NOTE]
 >I have created various version of the project in the repository and each project is added with some additional features/libraries/components
