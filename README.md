@@ -72,7 +72,7 @@ To enable service discovery below actions have been taken
     -  Application name (service-discovery) is added `application.yml` file
     -  `service-discovery.yml` properties file is added in config-server application for storing all configuration required to run service-discovery application.
     <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f2e9ebb5-3720-4c3c-aa86-127135a51fc0">
-
+- `auth-server` - This is an spring boot application used as authorization server for authenticating the user and provide access token for resource access. I have set in memory users for this project and only those users have read and write access on resources.
   - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
