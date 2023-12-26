@@ -54,15 +54,7 @@ As said above, spring boot framework is used for the development, various spring
 |Spring Authorization Server|This framework is used for authentication and authorization purpose. Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-oauth2-authorization-server` is added in dependency for authorization process.|[Auth Server](https://docs.spring.io/spring-authorization-server/reference/getting-started.html)
 |Spring Resource Server|This is used for validating user's access and takes permit/deny actions while user tries to access APIs/resources. Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-oauth2-resource-server` is added in dependency. As this works on top of spring security so spring securtity dependency Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-security` is also added.|[Resource Server](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/index.html)
 
->[!NOTE]
->I have created various version of the project in the repository and each project is added with some additional features/libraries/components
->but tried to maintain every next version must have all libraries pervious version contained. Also created one line of description against each version for clarity.
-These are the versions are currently available in repository
-- springboot-microservices-basic (I have explained this here)
-- springboot-microservice-with-circuitbreaker [README](https://github.com/mail2mrcm/springboot-microservices/edit/main/README-2.md)
-- springboot-microservices-circuitebreaker-distributed-tracing [README](https://github.com/mail2mrcm/springboot-microservices/edit/main/README-3.md)
-
-  ![image](https://github.com/mail2mrcm/tech4all/assets/118661926/a567b87c-0729-44aa-bf43-283a66fecb62)
+  ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f68de201-2c2b-4c5c-bded-90c67821bd68")
   - `Spring Config server` - This is used to externalize application configurations. [Spring Cloud Config](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)
      I have loaded configuration from resources so used profile = native and all configurations are available under /config of resources location.
       
