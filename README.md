@@ -37,14 +37,11 @@ Here, I have used spring boot framework to implement "School Managment Software"
 
 - # Architecture Diagram
 I also have provided an overall architecture diagram for clarity purpose. Definitely there is scope for improvement and I will be adding more features to make it robust further.
-  ![Student-Management](![school-management-architecture-img](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/03c3e807-886b-40bd-8d4f-101127f45da5)
-
-- # Project structure and various component details 
-As said above, spring boot framework is used for the development, various spring boot and spring cloud provided components/libraries are used to build this architecture. 
+- # Project structure and various component details
+![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f68de201-2c2b-4c5c-bded-90c67821bd68")
 |Spring Libraries/Components|Purpose|Reference|
 |---------------------------|-------|---------|
 |Spring Cloud Config |Config server is used for externalize the configurations. Group Id `org.springframework.cloud` and Artifact Id `spring-cloud-config-server` is added for enabling config server and all client applications have  Group Id `spring-cloud-config-server` and Artifact Id `spring-cloud-starter-config`|[Config Server](https://docs.spring.io/spring-cloud-config/docs/current/reference/html/)|
-|Spring Cloud Gateway|This is an API gateway is used to create common entry of all APIs involved. Group Id `org.springframework.cloud` and Artifact Id `spring-cloud-starter-gateway` is added in dependency|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)|
 |Spring Cloud Circuit Breaker| Resilience4j library used for fault tolerance and circuitbreaker.Group Id `org.springframework.cloud` and artifact ID `spring-cloud-starter-circuitbreaker-reactor-resilience4j` is added as dependency for circuitbreaker|[Circuit Breaker](https://docs.spring.io/spring-cloud-circuitbreaker/docs/current/reference/html/)|
 |Spring Cloud Netflix Eureka |This is client side service discovery allows services to find and communicate with each other without hard-coding the hostname and port. Group Id `org.springframework.cloud` and Artifact Id `spring-cloud-starter-netflix-eureka-server` is added in discovery server application and Group Id `org.springframework.cloud` and Artifact Id `spring-cloud-starter-netflix-eureka-client` is added in client applications for registering in eureka|[Service Discovery](https://spring.io/guides/gs/service-registration-and-discovery/)|
 |Spring Cloud Gateway |This is an API Gateway. Group Id `org.springframework.cloud` and artifact ID `spring-cloud-starter-gateway` is added in dependency for API Gateway feature|[Gateway](https://cloud.spring.io/spring-cloud-gateway/reference/html/)|
@@ -53,19 +50,29 @@ As said above, spring boot framework is used for the development, various spring
 |Spring Authorization Server|This framework is used for authentication and authorization purpose. Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-oauth2-authorization-server` is added in dependency for authorization process.|[Auth Server](https://docs.spring.io/spring-authorization-server/reference/getting-started.html)
 |Spring Resource Server|This is used for validating user's access and takes permit/deny actions while user tries to access APIs/resources. Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-oauth2-resource-server` is added in dependency. As this works on top of spring security so spring securtity dependency Group Id `org.springframework.boot` and Artifact Id `spring-boot-starter-security` is also added.|[Resource Server](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/index.html)
 
-  ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f68de201-2c2b-4c5c-bded-90c67821bd68")
-  - `config-server` - This application is used for external configuration. I have used native profile `(profiles.active=native)` to store all configurations under /resources/config of the application. You can use any other souce of configuration like git, database, vault etc and for that necessary properties need to be added in application.yml file. I have created a properties file for each of corresponding client application to store all related configuration of that application.
-    To enable spring config server below action has been taken
+- `config-server` - This application is used for storing all configuration of client applications. In this case, api-gateway, school-service, student-service, payment-service are client application and these application access HTTP resource-based API for external configuration from config-server. There can be various source of configuration supported. It supports loading configuration files from classpath, git, database, vault etc. I have loaded external configuration of client applications from classpath. I have created a properties file for each of corresponding client application for better clarity.[Single application.yml file can also be used instead].
+To enable spring config server below action has been taken
     - `@EnableConfigServer` annotation is added in spring boot startup application class.
     - Added profiles.active=native properties in application.yml file
-    - Created client application wise YML properties file in /resources/config location
+    - Created a `{client-appliaction-name}.yml` [for gateway application configuartion file is api-gateway.yml] for every client application and kept under /resources/config location
     - Config server dependency is added in POM.xml file
       `<dependency>
 			    <groupId>org.springframework.cloud</groupId>
 			   <artifactIdspring-cloud-config-server</artifactId>
 		   </dependency>`
     
-  - `service-discovery` - This is for service registry. configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
+- `service-discovery` - This application works as service registry and service discovery. When an instance of client application is started, immediately registered itself in service registry so that other application can find it  and can perform inter communication. Here api-gateway, school-service, payment-service, student-service are considered as client application.
+    To enable service discovery below actions have been taken
+    - `@EnableEurekaServer` annotation is added in spring boot startup application class.
+    -  Config server dependency is added in POM.xml file
+      `<dependency>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+	</dependency>`
+    -  Application name (service-discovery) is added `application.yml` file
+    -  `service-discovery.yml` properties file is added in config-server application for storing all configuration required to run service-discovery application.
+    
+  - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
   - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
