@@ -57,11 +57,11 @@ To enable spring config server below action has been taken
     - Created a `{client-appliaction-name}.yml` [for gateway application configuartion file is api-gateway.yml] for every client application and kept under /resources/config location
     - Config server dependency is added in POM.xml file
       `<dependency>
-			    <groupId>org.springframework.cloud</groupId>
-			   <artifactIdspring-cloud-config-server</artifactId>
-		   </dependency>`
+	    <groupId>org.springframework.cloud</groupId>
+	    <artifactIdspring-cloud-config-server</artifactId>
+       </dependency>`
     
-- `service-discovery` - This application works as service registry and service discovery. When an instance of client application is started, immediately registered itself in service registry so that other application can find it  and can perform inter communication. Here api-gateway, school-service, payment-service, student-service are considered as client application.
+- `service-discovery` - This application works as service registry and service discovery. When instance of client the application is started, immediately registered itself in service registry so that other application can find it for inter communication. Here api-gateway, school-service, payment-service, student-service are considered as client application.
 To enable service discovery below actions have been taken
     - `@EnableEurekaServer` annotation is added in spring boot startup application class.
     -  Config server dependency is added in POM.xml file
@@ -71,12 +71,20 @@ To enable service discovery below actions have been taken
 	</dependency>`
     -  Application name (service-discovery) is added `application.yml` file
     -  `service-discovery.yml` properties file is added in config-server application for storing all configuration required to run service-discovery application.
-    <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f2e9ebb5-3720-4c3c-aa86-127135a51fc0">
-- `auth-server` - This is an independent spring boot application used as authorization server for authenticating the user and provide access token for resource access. I have set in memory users for this project and only those users have read and write access on resources. Resource server will connect to auth-server for validating the token provided in request header while accessing resources. 
-For auth-server below actions have been taken
+    -  <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f2e9ebb5-3720-4c3c-aa86-127135a51fc0">
+- `auth-server` - This is an independent spring boot application used as authorization server for authenticating the user and issue an access token for accessing resource of resouce server. I have set in memory users with read and write access. 
+For auth-server below actions have been taken.
    - `application.yml` properties file is added under resources  for storing all configuration required to run service-discovery application.
    <img width="409" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49">
-
+- `school-service|student-service|payment-service` - These are all microservices for managing business capabilities of school management software. These microservices exposed various REST supported APIs to communicate with other services.
+-
+|Microservice|Business Capabilites|API Path & HTTP Method|
+|------------|-------------------|----------------------|
+|School Service|To Add new school for society|POST http://{host}:{port}/school/|
+|School Service|To Edit school information|PUT http://{host}:{port}/school/{id}|
+|School Service|To Delete school from society|DELETE http://{host}:{port}/school/{id}|
+|School Service|To fetch all of the school details |GET http://{host}:{port}/school/|
+|School Service|To fetch specific school details |GET http://{host}:{port}/school/{id}|
   - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
