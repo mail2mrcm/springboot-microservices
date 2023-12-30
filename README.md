@@ -78,13 +78,18 @@ For auth-server below actions have been taken.
    <img width="409" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49">
 - `school-service|student-service|payment-service` - These are all microservices for managing business capabilities of school management software. These microservices exposed various REST supported APIs to communicate with other services.
 -
-|Microservice|Business Capabilites|API Path & HTTP Method|
-|------------|-------------------|----------------------|
+|Microservice|Business Capabilites|HTTP Method & API Path|
+|------------|--------------------|----------------------|
 |School Service|To Add new school for society|POST http://{host}:{port}/school/|
 |School Service|To Edit school information|PUT http://{host}:{port}/school/{id}|
 |School Service|To Delete school from society|DELETE http://{host}:{port}/school/{id}|
-|School Service|To fetch all of the school details |GET http://{host}:{port}/school/|
-|School Service|To fetch specific school details |GET http://{host}:{port}/school/{id}|
+|School Service|To fetch all of the school details|GET http://{host}:{port}/school/|
+|School Service|To Fetch specific school details|GET http://{host}:{port}/school/{id}|
+|Student Service|To Add new student to specific school|POST http://{host}:{port}/student/|
+|Student Service|To Edit student information|PUT http://{host}:{port}/student/{id}|
+|Student Service|To Delete student from school|DELETE http://{host}:{port}/student/{id}|
+|Student Service|To Fetch all of the student details of a school|GET http://{host}:{port}/student/|
+|Student Service|To Fetch specific student details|GET http://{host}:{port}/student/{id}|
   - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
