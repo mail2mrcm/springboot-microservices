@@ -77,9 +77,9 @@ For auth-server below actions have been taken.
    - `application.yml` properties file is added under resources  for storing all configuration required to run service-discovery application.
    <img width="409" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49">
 - `school-service|student-service|payment-service` - These are all microservices for managing business capabilities of school management software. These microservices exposed various REST supported APIs to communicate with other services.
--
-|Microservice|Business Capabilites|HTTP Method & API Path|
-|------------|--------------------|----------------------|
+
+|Microservice|Business Capabilites|HTTP Method & API endpoint|
+|------------|--------------------|--------------------------|
 |School Service|To Add new school for society|POST http://{host}:{port}/school/|
 |School Service|To Edit school information|PUT http://{host}:{port}/school/{id}|
 |School Service|To Delete school from society|DELETE http://{host}:{port}/school/{id}|
@@ -96,6 +96,17 @@ For auth-server below actions have been taken.
 |Payment Service|To Delete payment|DELETE http://{host}:{port}/payment/{id}|
 |Payment Service|To Fetch a specific payment of student|GET http://{host}:{port}/payment/{id}|
 |Payment Service|To Fetch paid/unpaid payment of a student|GET http://{host}:{port}/payment/student/{studentid}|
+
+For student-service or school-service or payment-service have similar configuration only port/host are different. 
+- config client dependency is added in POM for fetching configuration from config server.
+  `<dependency>
+	<groupId>org.springframework.cloud</groupId>
+	<artifactId>spring-cloud-starter-config</artifactId>
+   </dependency>`
+- school-service.yml file is added in /resources/config of `config-server` application for keeping all external configuration.
+- <img width="492" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5c7158ba-1dbf-433b-82fa-bafc697d263f">
+
+-  in spring boot startup application class.
   - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
