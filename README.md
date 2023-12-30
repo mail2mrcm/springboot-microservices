@@ -103,12 +103,18 @@ For student-service or school-service or payment-service have similar configurat
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-starter-config</artifactId>
    </dependency>`
-- school-service.yml file is added in /resources/config of `config-server` application for keeping all external configuration.
-- <img width="492" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5c7158ba-1dbf-433b-82fa-bafc697d263f">
+- I have set server.port=0 (This was being set for dynamic port assignment as we may need to run multiple instances of same application.), spring.application.name = school-service and spring.config.import (url of `config-server` application) for config server connectivity in **application.yml** properties file.
+  
+  <img width="372" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/302d6a0b-44f5-4a09-83bd-9952d0522a29">
+  
+ - service discovery client dependency is added in POM discovery and registry purpose.
+  `		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>`
+-  **school-service.yml** file is added in /resources/config of `config-server` application for keeping all external configuration.
+  <img width="492" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5c7158ba-1dbf-433b-82fa-bafc697d263f">
 
--  in spring boot startup application class.
-  - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
-     refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
   - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
      configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
