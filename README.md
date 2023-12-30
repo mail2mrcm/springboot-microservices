@@ -113,17 +113,12 @@ student-service or school-service or payment-service have almost similar configu
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>`
 -  **school-service.yml** file is added in /resources/config of `config-server` application for keeping all external configuration.
-  <img width="492" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5c7158ba-1dbf-433b-82fa-bafc697d263f">
+   <img width="492" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5c7158ba-1dbf-433b-82fa-bafc697d263f">
   
 -  Added few important properties for service discovery like, eureka.client-service-url (url of service discovery), eureka.instnace (I have created unique id for each instance of application due to existance of multiple instance for managing load of incoming request. combination of application name, instance id and random value).
     
   - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
      configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
-    
-  - `Student Miroservice `- add/get/update student and also perform internal communication with Payment microservice to fetch payment details of student. This application is also 
-     regstered in service discovery as per the configuration available in ***student-service.yml***.
-    
-  - `Payment Microservice` - add/make payment function. This application is regstered in service discovery as per the configuration available in ***payment-service.yml***.
     
 - ## Buiild & Deployment  :
   1. Build Config server and Deploy config-server1.0.0.jar. Default port 9090 is used.
