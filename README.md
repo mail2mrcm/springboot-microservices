@@ -97,7 +97,7 @@ For auth-server below actions have been taken.
 |Payment Service|To Fetch a specific payment of student|GET http://{host}:{port}/payment/{id}|
 |Payment Service|To Fetch paid/unpaid payment of a student|GET http://{host}:{port}/payment/student/{studentid}|
 
-For student-service or school-service or payment-service have similar configuration only port/host are different. 
+student-service or school-service or payment-service have almost similar configuration and dpendency, so I have explained only school-service configuration and dependency here. 
 - config client dependency is added in POM for fetching configuration from config server.
   `<dependency>
 	<groupId>org.springframework.cloud</groupId>
@@ -114,7 +114,8 @@ For student-service or school-service or payment-service have similar configurat
 		</dependency>`
 -  **school-service.yml** file is added in /resources/config of `config-server` application for keeping all external configuration.
   <img width="492" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5c7158ba-1dbf-433b-82fa-bafc697d263f">
-
+  
+-  Added few important properties for service discovery like, eureka.client-service-url (url of service discovery), eureka.instnace (I have created unique id for each instance of application due to existance of multiple instance for managing load of incoming request. combination of application name, instance id and random value).
     
   - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
      configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
