@@ -91,11 +91,11 @@ For auth-server below actions have been taken.
 |Student Service|To Fetch all of the student details of a school|GET http://{host}:{port}/student/|
 |Student Service|To Fetch specific student details|GET http://{host}:{port}/student/{id}|
 |Student Service|To Fetch specific school details|GET http://{host}:{port}/school/{id}|
-|Payment Service|To Add new payment for student|POST http://{host}:{port}/student/|
-|Payment Service|To Edit student information|PUT http://{host}:{port}/student/{id}|
-|Payment Service|To Delete student from school|DELETE http://{host}:{port}/student/{id}|
-|Payment Service|To Fetch all of the student details of a school|GET http://{host}:{port}/student/|
-|Payment Service|To Fetch specific student details|GET http://{host}:{port}/student/{id}|
+|Payment Service|To Add new payment for student|POST http://{host}:{port}/payment/|
+|Payment Service|To make payment|PUT http://{host}:{port}/payment/{id}|
+|Payment Service|To Delete payment|DELETE http://{host}:{port}/payment/{id}|
+|Payment Service|To Fetch a specific payment of student|GET http://{host}:{port}/payment/{id}|
+|Payment Service|To Fetch paid/unpaid payment of a student|GET http://{host}:{port}/payment/student/{studentid}|
   - configuration of the service registry is available in config server i.e, ***service-discovery.yml***. Please 
      refer [service registry](https://spring.io/guides/gs/service-registration-and-discovery/) for more technical details.
     
