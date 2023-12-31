@@ -128,6 +128,8 @@ student-service or school-service or payment-service have almost similar configu
   `public ResponseEntity<String> getSystemFailure() {
         return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Please try after sometime");
     }`
+- Also, attached fallback method in relevent APIs using @CircuitBreaker annotation.
+  <img width="463" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/c5f3eed1-9ed0-4f41-b291-a2a625f979c6">
 
 - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
      configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
