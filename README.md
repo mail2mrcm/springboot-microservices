@@ -115,9 +115,21 @@ student-service or school-service or payment-service have almost similar configu
 -  **school-service.yml** file is added in /resources/config of `config-server` application for keeping all external configuration.
    <img width="492" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/5c7158ba-1dbf-433b-82fa-bafc697d263f">
   
--  Added few important properties for service discovery like, eureka.client-service-url (url of service discovery), eureka.instnace (I have created unique id for each instance of application due to existance of multiple instance for managing load of incoming request. combination of application name, instance id and random value).
-    
-  - `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
+-  Added few important properties for service discovery like, eureka.client-service-url (url of service discovery), eureka.instnace (I have created unique id for each instance of application due to existance of multiple instances of sample application for managing load of incoming request. combination of application name, instance id and random value).
+-  Also added resilience4j dependeny for fault tolerance. Any of the service i.e., student-service, school-service or payment-service is down then request will not be sent to service rather end user can get customize message. I have defined fallback method to manage the same.
+-  `<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+		</dependency>`
+- Added corrsponding configuration in school-service.yml file for resilience4j.circuitbreaker.
+  <img width="395" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/d00a1aaf-1d70-4be8-9386-f61ed411de7e">
+- Defined a fallback method **getSystemFailure()** in controller which will executed if when downstream service is down.
+
+  `public ResponseEntity<String> getSystemFailure() {
+        return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Please try after sometime");
+    }`
+
+- `Spring CLoud API Gateway` - Gateway of all microservices.  All srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
      configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
     
 - ## Buiild & Deployment  :
