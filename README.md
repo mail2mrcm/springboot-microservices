@@ -154,6 +154,10 @@ student-service or school-service or payment-service have almost similar configu
 -  Additionally, `@EnableWebFluxSecurity` annotation is added to take the dvantage of the ServerHttpSecurity class to build our security configuration for restricting  authenticated request as per scope.
 
    <img width="546" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/c2f2ee99-3fbd-413e-b824-827d4501f445"> 
+-  As `api-gateway` is the entry point, so this is the best place to add circuit breaker configuration in **gateway-service.yml** for building resilience in system. Also, added fallback method for handling incoming requuest while downstream service is down or not responding.
+
+   <img width="589" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/dc8c8416-8378-42ff-8f56-97519b382b87">
+
     
 - ## Buiild & Deployment  :
   1. Build Config server and Deploy config-server1.0.0.jar. Default port 9090 is used.
