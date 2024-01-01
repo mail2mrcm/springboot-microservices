@@ -19,7 +19,7 @@ Microservice architecture has become very popular due to it's aglity, scalabilit
   - <b>Authentication and Authorization ![#f03c15](https://via.placeholder.com/15/f03c15/f03c15.png) `Security Patterns`</b>
      <p> security is an important aspect of microservice architecture and we should follow standard Oauth2.0 process for securing our APIs to avoid any unauthorize access of data, function and system. This can be acheived by authenticating user and authorize their access of APIs based on defined role/authority.  </p> 
 - # Use Case
-<p> I have considered a simple use case to demonstrate the above said design patterns and principles. A educational society has decided to launch few model schools for child to provide better way of learning. They are looking for a "School Management Software" to perform most operations though online processes. </p>
+<p> I have considered a simple use case to demonstrate the above said design patterns and principles. A educational society has decided to launch few model schools for children to provide better way of learning. They are looking for a "School Management Software" to perform most operations though online processes. </p>
 
 - Society can add new school in system and also can update various parameters of existing school like location, school governance details.
 - Society has the the authority to delete school from the list.
