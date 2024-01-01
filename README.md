@@ -135,9 +135,20 @@ student-service or school-service or payment-service have almost similar configu
 
 - **gateway-service.yml** file is added for external configuration in `config-server` application.
 - Added netflix ureka discovery client dependency as like other applications and added corresponding service-url, eureka.instance.instance-id details.
+  
   <img width="500" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cda013bb-dac1-4beb-938d-613d5f43d4cc">
 
--  This application is also regstered in service discovery as per the 
+-  Added dependency for resource server `<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>`
+                and
+		`<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>`
+- To connect to `auth-server`, I have added issuer-url (url of auth-server) in  **gateway-service.yml**.
+- 
      configuration available in **gateway-service.yml**. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
     
 - ## Buiild & Deployment  :
