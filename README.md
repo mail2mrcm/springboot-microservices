@@ -131,9 +131,14 @@ student-service or school-service or payment-service have almost similar configu
 - Also, attached fallback method in relevent APIs using @CircuitBreaker annotation.
   <img width="463" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/c5f3eed1-9ed0-4f41-b291-a2a625f979c6">
 
-- `api-gateway` - I have use this application as the gateway of all microservices.  All APIs will be accessible through url of API gateway, only context root will be diffrent for each downstream microservices. For student api context root is used **/student**, for school APIs context root is **/school** and for payment it is **/payment**. Additionally gateway works as Authorization resource server. So it is integrated with `auth-server` for validating incoming resource request if request header has valid access token then only it will forward request to downstearm i.e., student, payment or school service dpending on routing defined.
-- srevice to be accessed through this gateway. This application is also regstered in service discovery as per the 
-     configuration available in ***gateway-service.yml***. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
+- `api-gateway` - I have use this application as the gateway of all microservices.  All APIs will be accessible through url of API gateway, only context root will be diffrent for each downstream microservices. For student api context root is used **/student**, for school APIs context root is **/school** and for payment it is **/payment**. Additionally this gateway works as Authorization resource server. So it is integrated with `auth-server` for validating incoming resource request if request header has valid bearer token then only it will forward request to downstearm i.e., student, payment or school service dpending on routing defined.
+
+- **gateway-service.yml** file is added for external configuration in `config-server` application.
+- Added netflix ureka discovery client dependency as like other applications and added corresponding service-url, eureka.instance.instance-id details.
+  <img width="500" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cda013bb-dac1-4beb-938d-613d5f43d4cc">
+
+-  This application is also regstered in service discovery as per the 
+     configuration available in **gateway-service.yml**. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
     
 - ## Buiild & Deployment  :
   1. Build Config server and Deploy config-server1.0.0.jar. Default port 9090 is used.
