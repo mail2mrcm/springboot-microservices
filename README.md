@@ -36,7 +36,7 @@ Here, I have used spring boot framework to implement "School Managment Software"
   - Maven 3.9.2
 
 - # Architecture Diagram
-I also have provided an overall architecture diagram for clarity purpose. Definitely there is scope for improvement and I will be adding more features to make it robust further.
+I have provided an overall architecture diagram for better undertanding and clarity purpose. Definitely there is scope for improvement and I will be adding more features to make it robust further.
 - # Project structure and various component details
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f68de201-2c2b-4c5c-bded-90c67821bd68")
 |Spring Libraries/Components|Purpose|Reference|
