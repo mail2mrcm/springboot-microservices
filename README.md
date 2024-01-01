@@ -147,9 +147,13 @@ student-service or school-service or payment-service have almost similar configu
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>`
-- To connect to `auth-server`, I have added issuer-url (url of auth-server) in  **gateway-service.yml**.
-- 
-     configuration available in **gateway-service.yml**. [Spring api gateway](https://spring.io/guides/gs/gateway/) for more details
+- To connect to `auth-server`, I have added issuer-url (url of auth-server) in  **gateway-service.yml**. Where http://localhost:9999 is the value contained in the iss claim for JWT tokens that the authorization server will issue. Resource Server will use this property to further self-configure, discover the authorization server’s public keys, and subsequently validate incoming JWTs.
+  
+  <img width="377" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/157f9279-ea82-4e75-8600-70e0bb949e44">
+  
+-  Additionally, `@EnableWebFluxSecurity` annotation is added to take the dvantage of the ServerHttpSecurity class to build our security configuration.
+
+   <img width="546" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/c2f2ee99-3fbd-413e-b824-827d4501f445"> 
     
 - ## Buiild & Deployment  :
   1. Build Config server and Deploy config-server1.0.0.jar. Default port 9090 is used.
