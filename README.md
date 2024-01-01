@@ -151,7 +151,7 @@ student-service or school-service or payment-service have almost similar configu
   
   <img width="377" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/157f9279-ea82-4e75-8600-70e0bb949e44">
   
--  Additionally, `@EnableWebFluxSecurity` annotation is added to take the dvantage of the ServerHttpSecurity class to build our security configuration.
+-  Additionally, `@EnableWebFluxSecurity` annotation is added to take the dvantage of the ServerHttpSecurity class to build our security configuration for restricting  authenticated request as per scope.
 
    <img width="546" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/c2f2ee99-3fbd-413e-b824-827d4501f445"> 
     
