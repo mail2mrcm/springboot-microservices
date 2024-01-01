@@ -152,10 +152,14 @@ student-service or school-service or payment-service have almost similar configu
   <img width="377" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/157f9279-ea82-4e75-8600-70e0bb949e44">
   
 -  Additionally, `@EnableWebFluxSecurity` annotation is added to take the dvantage of the ServerHttpSecurity class to build our security configuration for restricting  authenticated request as per scope.
+  
+   <img width="406" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/e3a68b33-bb64-4071-a6c3-52d17bedc687">
+   <img width="547" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/1aaf5fcc-67a5-41e5-8a77-4dbf9e1661f1">
 
-   <img width="546" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/c2f2ee99-3fbd-413e-b824-827d4501f445"> 
+   
 -  As `api-gateway` is the entry point, so this is the best place to add circuit breaker configuration in **gateway-service.yml** for building resilience in system. Also, added fallback method for handling incoming requuest while downstream service is down or not responding.
 
+   <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/283dcb5c-9369-4143-8542-809ef0ecb1d6">
    <img width="589" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/dc8c8416-8378-42ff-8f56-97519b382b87">
 
     
