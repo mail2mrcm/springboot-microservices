@@ -76,8 +76,15 @@ To enable service discovery below actions have been taken
     -  <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f2e9ebb5-3720-4c3c-aa86-127135a51fc0">
 - `auth-server` - This is an independent spring boot application used as authorization server for authenticating the user and issue an access token for accessing resource of resouce server. I have set in memory users with read and write access. 
 For auth-server below actions have been taken.
-   - `application.yml` properties file is added under resources  for storing all configuration required to run service-discovery application.
-   <img width="409" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49">
+   - `application.yml` properties file is added under resources for storing all configuration required to run auth-server application.
+![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49)
+
+- I have used postman for retriving access token using below steps
+     + Set auth details in postman 
+	     Auth Type -  OAuth2.0
+	     Token Name - Access_Token
+	     Grant type- Authorization Code
+	     Callback URL -http://test []
 - `school-service|student-service|payment-service` - These are all microservices for managing business capabilities of school management software. These microservices exposed various REST supported APIs to communicate with other services.
 
 |Microservice|Business Capabilites|HTTP Method & API endpoint|
