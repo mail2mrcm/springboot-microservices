@@ -37,6 +37,7 @@ Here, I have used spring boot framework to implement "School Managment Software"
 
 - # Architecture Diagram
 I have provided an overall architecture diagram for better undertanding and clarity purpose. Definitely there is scope for improvement and I will be adding more features to make it robust further.
+
 - # Project structure and various component details
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f68de201-2c2b-4c5c-bded-90c67821bd68")
 |Spring Libraries/Components|Purpose|Reference|
@@ -125,7 +126,8 @@ student-service or school-service or payment-service have almost similar configu
   <img width="395" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/d00a1aaf-1d70-4be8-9386-f61ed411de7e">
 - Defined a fallback method **getSystemFailure()** in controller which will executed if when downstream service is down.
 
-  `public ResponseEntity<String> getSystemFailure() {
+  `@RequestMapping(value = "/systemFailure", method = {RequestMethod.GET, RequestMethod.POST})
+    public ResponseEntity<String> getSystemFailure() {
         return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Please try after sometime");
     }`
 - Also, attached fallback method in relevent APIs using @CircuitBreaker annotation.
