@@ -37,6 +37,8 @@ Here, I have used spring boot framework to implement "School Managment Software"
 
 - # Architecture Diagram
 I have provided an overall architecture diagram for better undertanding and clarity purpose. Definitely there is scope for improvement and I will be adding more features to make it robust further.
+![image](https://github.com/user-attachments/assets/0bbed6f6-dcdb-4c17-b2d6-21d5a93777de)
+
 - # Project structure and various component details
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f68de201-2c2b-4c5c-bded-90c67821bd68")
 |Spring Libraries/Components|Purpose|Reference|
@@ -72,10 +74,22 @@ To enable service discovery below actions have been taken
     -  Application name (service-discovery) is added `application.yml` file
     -  `service-discovery.yml` properties file is added in config-server application for storing all configuration required to run service-discovery application.
     -  <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f2e9ebb5-3720-4c3c-aa86-127135a51fc0">
-- `auth-server` - This is an independent spring boot application used as authorization server for authenticating the user and issue an access token for accessing resource of resouce server. I have set in memory users with read and write access. 
+- `auth-server` - This is spring boot based application works as authorization server for authenticating the user and issues an access token for accessing the resource of resouce server.  I have user in memory users for demo purpose. 
 For auth-server below actions have been taken.
-   - `application.yml` properties file is added under resources  for storing all configuration required to run service-discovery application.
-   <img width="409" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49">
+	- `application.yml` properties file is added under resources for storing all configuration required to run auth-server application.
+![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49)
+- I have used postman as resource client and used auth_code flow for retriving the access token.
+     + Set auth details in postman
+       	 - Auth Type-		 	Oauth2.0
+	     - Grant type- 	    	Authorization Code
+	     - Callback URL-	    http://test []
+		 - Auth URL-			http://localhost:9999/oauth2/authorize
+		 - Access Token URL-  	http://localhost:9999/oauth2/token
+		 - Client ID-			<client id>
+   		 - Client Secret-     	<secret>
+	     - Scope-				read write
+		 - Client Authentication- Set as Basic Auth header
+	<img width="415" height="377" alt="image" src="https://github.com/user-attachments/assets/d1c1fced-c3b3-4a78-a810-5f6d15afe4d0" />
 - `school-service|student-service|payment-service` - These are all microservices for managing business capabilities of school management software. These microservices exposed various REST supported APIs to communicate with other services.
 
 |Microservice|Business Capabilites|HTTP Method & API endpoint|
@@ -125,9 +139,12 @@ student-service or school-service or payment-service have almost similar configu
   <img width="395" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/d00a1aaf-1d70-4be8-9386-f61ed411de7e">
 - Defined a fallback method **getSystemFailure()** in controller which will executed if when downstream service is down.
 
-  `public ResponseEntity<String> getSystemFailure() {
-        return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Please try after sometime");
-    }`
+  ```
+  @RequestMapping(value = "/systemFailure", method = {RequestMethod.GET, RequestMethod.POST})
+  public ResponseEntity<String> getSystemFailure() {
+    return ResponseEntity.status(HttpStatus.BAD_GATEWAY).body("Please try after sometime");
+  }
+  ```
 - Also, attached fallback method in relevent APIs using @CircuitBreaker annotation.
   <img width="463" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/c5f3eed1-9ed0-4f41-b291-a2a625f979c6">
 
