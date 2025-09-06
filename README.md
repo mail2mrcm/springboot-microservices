@@ -79,13 +79,14 @@ For auth-server below actions have been taken.
 	- `application.yml` properties file is added under resources for storing all configuration required to run auth-server application.
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49)
 - I have used postman as resource client and used auth_code flow for retriving the access token.
-     + Set auth details in postman 	     
-	     - Grant type- 	    Authorization Code
+     + Set auth details in postman
+       	 - Auth Type-		 	Oauth2.0
+	     - Grant type- 	    	Authorization Code
 	     - Callback URL-	    http://test []
 		 - Auth URL-			http://localhost:9999/oauth2/authorize
-		 - Access Token URL-  http://localhost:9999/oauth2/token
+		 - Access Token URL-  	http://localhost:9999/oauth2/token
 		 - Client ID-			<client id>
-   		 - Client Secret-     <secret>
+   		 - Client Secret-     	<secret>
 	     - Scope-				read write
 		 - Client Authentication- Set as Basic Auth header
 	<img width="415" height="377" alt="image" src="https://github.com/user-attachments/assets/d1c1fced-c3b3-4a78-a810-5f6d15afe4d0" />
