@@ -74,17 +74,21 @@ To enable service discovery below actions have been taken
     -  Application name (service-discovery) is added `application.yml` file
     -  `service-discovery.yml` properties file is added in config-server application for storing all configuration required to run service-discovery application.
     -  <img width="408" alt="image" src="https://github.com/mail2mrcm/springboot-microservices/assets/118661926/f2e9ebb5-3720-4c3c-aa86-127135a51fc0">
-- `auth-server` - This is an independent spring boot application used as authorization server for authenticating the user and issue an access token for accessing resource of resouce server. I have set in memory users with read and write access. 
+- `auth-server` - This is spring boot based application works as authorization server for authenticating the user and issues an access token for accessing the resource of resouce server.  I have user in memory users for demo purpose. 
 For auth-server below actions have been taken.
-   - `application.yml` properties file is added under resources for storing all configuration required to run auth-server application.
+	- `application.yml` properties file is added under resources for storing all configuration required to run auth-server application.
 ![image](https://github.com/mail2mrcm/springboot-microservices/assets/118661926/cb8fa5a3-af99-46a4-b8be-516aa33cef49)
-
-- I have used postman for retriving access token using below steps
-     + Set auth details in postman 
-	     Auth Type -  OAuth2.0
-	     Token Name - Access_Token
-	     Grant type- Authorization Code
-	     Callback URL -http://test []
+- I have used postman as resource client and used auth_code flow for retriving the access token.
+     + Set auth details in postman 	     
+	     - Grant type- 	    Authorization Code
+	     - Callback URL-	    http://test []
+		 - Auth URL-			http://localhost:9999/oauth2/authorize
+		 - Access Token URL-  http://localhost:9999/oauth2/token
+		 - Client ID-			<client id>
+   		 - Client Secret-     <secret>
+	     - Scope-				read write
+		 - Client Authentication- Set as Basic Auth header
+	<img width="415" height="377" alt="image" src="https://github.com/user-attachments/assets/d1c1fced-c3b3-4a78-a810-5f6d15afe4d0" />
 - `school-service|student-service|payment-service` - These are all microservices for managing business capabilities of school management software. These microservices exposed various REST supported APIs to communicate with other services.
 
 |Microservice|Business Capabilites|HTTP Method & API endpoint|
