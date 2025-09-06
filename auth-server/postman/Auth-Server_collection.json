@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "2cc098cb-43ab-41f6-ba8e-7269ca2dad40",
+		"name": "Auth-Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12702948"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9999/",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Access_token",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "scope",
+							"value": "read write",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "http://localhost:9999/oauth2/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "http://localhost:9999/oauth2/authorize",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "authorization_code",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "secret",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "client",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "http://test",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Chandan\",\r\n    \"lastName\": \"Maity\",\r\n    \"gender\": \"Male\",\r\n    \"age\": 30,\r\n    \"orgId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9999",
+					"path": [
+						""
+					]
+				},
+				"description": "login "
+			},
+			"response": []
+		}
+	]
+}
